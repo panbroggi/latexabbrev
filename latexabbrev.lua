@@ -4,9 +4,6 @@ local command = require "core.command"
 local contextmenu = require "plugins.contextmenu"
 local keymap = require "core.keymap"
 
-
-VERSION = "0.0.1"
-
 local ABBREVS = {}
 ABBREVS["bsansy"] = "𝘆"
 ABBREVS["bscra"] = "𝓪"
