@@ -1,7 +1,12 @@
 # latexabbrev
 Lite-xl plugin to replace latex expressions with the corresponding UTF8 symbol.
 
-Usage: select a word that is a latex expression (like `alpha`), and activate the plugin in one of the following ways
+## Installation
+Download the file `latexabbr.lua` and place it in your plugin directory (e.g. `$HOME/.config/lite-xl/plugins`)
+
+## How to use
+
+Select a word that is a latex expression (like `alpha`), and activate the plugin in one of the following ways
 
 - Press `ctrl+tab`.
 
