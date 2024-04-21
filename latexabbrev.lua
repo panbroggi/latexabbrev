@@ -2522,7 +2522,7 @@ ABBREVS["leftsquigarrow"] = "⇜"
 ABBREVS["leftarrowsubset"] = "⥺"
 
 command.add("core.docview", {
-  ["latexabbr:selected"] = function(dv)
+  ["latexabbrev:selected"] = function(dv)
     if dv.doc:has_selection() then
       local text = dv.doc:get_text(dv.doc:get_selection())
       if ABBREVS[text] ~= nil then
@@ -2539,7 +2539,7 @@ command.add("core.docview", {
 })
 
 contextmenu:register("core.docview", {
-  { text = "Replace LaTeX",  command = "latexabbr:selected" }
+  { text = "Replace LaTeX",  command = "latexabbrev:selected" }
 })
 
-keymap.add { ["ctrl+tab"] = "latexabbr:selected" }
+keymap.add { ["ctrl+tab"] = "latexabbrev:selected" }
