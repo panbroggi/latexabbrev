@@ -1,0 +1,12 @@
+{
+  "addons": [
+    {
+      "id": "latexabbrev",
+      "type": "plugin",
+      "version": "1.0.0",
+      "mod_version": "3",
+      "description": "Replace LaTeX expressions with the corresponding UTF-8 symbol.",
+      "path": "latexabbr.lua"
+    }
+  ]
+}

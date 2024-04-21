@@ -1,5 +1,5 @@
 # latexabbrev
-Lite-xl plugin to replace latex expressions with the corresponding UTF8 symbol.
+Lite-xl plugin to replace latex expressions with the corresponding UTF-8 symbol.
 
 ## Installation
 Download the file `latexabbr.lua` and place it in your plugin directory (e.g. `$HOME/.config/lite-xl/plugins`)
