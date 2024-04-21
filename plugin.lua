@@ -2525,11 +2525,15 @@ command.add("core.docview", {
   ["latexabbr:selected"] = function(dv)
     if dv.doc:has_selection() then
       local text = dv.doc:get_text(dv.doc:get_selection())
-      dv.doc:text_input(ABBREVS[text])
+      if ABBREVS[text] ~= nil then
+		dv.doc:text_input(ABBREVS[text])
+      end
     else
       local line = dv.doc:get_selection()
       local text = dv.doc.lines[line]
-      dv.doc:insert(line+1, 0, ABBREVS[text])
+      if ABBREVS[text] ~= nil then
+      	dv.doc:insert(line+1, 0, ABBREVS[text])
+      end
     end
   end
 })
@@ -2539,4 +2543,3 @@ contextmenu:register("core.docview", {
 })
 
 keymap.add { ["ctrl+tab"] = "latexabbr:selected" }
-
